@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 // ========================
@@ -49,36 +48,38 @@ func main() {
 		num2 int
 		opsi int8
 	)
-	// Menu Operasi
-	fmt.Println("[1] Penjumlahan")
-	fmt.Println("[2] Perkalian")
-	fmt.Println("[3] Pengurangan")
-	fmt.Println("[4] Pembagian")
-	fmt.Print("Pilih Angka Opsi : ")
-	fmt.Scan(&opsi)
+	for{
+		// Menu Operasi
+		fmt.Println("[1] Penjumlahan")
+		fmt.Println("[2] Perkalian")
+		fmt.Println("[3] Pengurangan")
+		fmt.Println("[4] Pembagian")
+		fmt.Print("Pilih Angka Opsi : ")
+		fmt.Scan(&opsi)
+				
+		// Input User
+		fmt.Print("\nInput Angka Pertama : ")
+		fmt.Scan(&num1)
+		fmt.Print("Input Angka Kedua : ")
+		fmt.Scan(&num2)
 
-	// Input User
-	fmt.Print("Input Angka Pertama : ")
-	fmt.Scan(&num1)
-	fmt.Print("Input Angka Kedua : ")
-	fmt.Scan(&num2)
+		// Seleksi Hasil Pemilihan Operasi
 
-	// Seleksi Hasil Pemilihan Operasi
-	if opsi == 1 {
-		count := sum(num1, num2)
-		fmt.Printf("Result : %d", count)
-		time.Sleep(5 * time.Second)
-	} else if opsi == 2 {
-		count := multiply(num1, num2)
-		fmt.Printf("Result : %d", count)
-		time.Sleep(5 * time.Second)
-	} else if opsi == 3 {
-		count := subtract(num1, num2)
-		fmt.Printf("Result : %d", count)
-		time.Sleep(5 * time.Second)
-	} else if opsi == 4 {
-		count := divide(num1, num2)
-		fmt.Printf("Result : %d", count)
-		time.Sleep(5 * time.Second)
+		switch opsi {
+		case 1:
+			count := sum(num1, num2)
+			fmt.Printf("Result : %d\n\n", count)
+		case 2:
+			count := multiply(num1, num2)
+			fmt.Printf("Result : %d\n\n", count)
+		case 3:
+			count := subtract(num1, num2)
+			fmt.Printf("Result : %d\n\n", count)
+		case 4:
+			count := divide(num1, num2)
+			fmt.Printf("Result : %d\n\n", count)
+		default:
+			fmt.Println("Opsi Tidak Ada")
+		}
 	}
 }

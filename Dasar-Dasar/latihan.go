@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+/*
 func main() {
 	var (
 		namaDepan    string
@@ -31,4 +32,9 @@ func main() {
 	fmt.Println(umur)
 	fmt.Println(beratBadan)
 	fmt.Println(tinggiBadan)
+}
+*/
+
+func main(){
+	
 }
