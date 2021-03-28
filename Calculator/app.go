@@ -8,35 +8,19 @@ import (
 // 		FUNGSI OPERASI
 // ========================
 func multiply(x, y int) int {
-	var (
-		result int
-	)
-	result = x * y
-	return result
+	return x * y
 }
 
 func sum(x, y int) int {
-	var (
-		result int
-	)
-	result = x + y
-	return result
+	return x + y
 }
 
 func subtract(x, y int) int {
-	var (
-		result int
-	)
-	result = x - y
-	return result
+	return x - y
 }
 
 func divide(x, y int) int {
-	var (
-		result int
-	)
-	result = x / y
-	return result
+	return x / y
 }
 
 // ========================
@@ -48,7 +32,7 @@ func main() {
 		num2 int
 		opsi int8
 	)
-	for{
+	for {
 		// Menu Operasi
 		fmt.Println("[1] Penjumlahan")
 		fmt.Println("[2] Perkalian")
@@ -56,7 +40,7 @@ func main() {
 		fmt.Println("[4] Pembagian")
 		fmt.Print("Pilih Angka Opsi : ")
 		fmt.Scan(&opsi)
-				
+
 		// Input User
 		fmt.Print("\nInput Angka Pertama : ")
 		fmt.Scan(&num1)
