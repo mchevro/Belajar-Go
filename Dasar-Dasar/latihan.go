@@ -1,8 +1,6 @@
 package main
 
-import "fmt"
-
-/*
+/* Membuat Variable
 func main() {
 	var (
 		namaDepan    string
@@ -35,6 +33,22 @@ func main() {
 }
 */
 
-func main(){
-	
+/* For Latihan
+func main() {
+	// Slice & For range
+	name := []string{"Mahendra", "Chevro", "Susanto"}
+	for _, value := range name {
+		fmt.Println(value)
+	}
+
+	// Array & For range
+	var nilai = [3]int{
+		100,
+		43,
+		40,
+	}
+	for _, value := range nilai {
+		fmt.Println(value)
+	}
 }
+*/
