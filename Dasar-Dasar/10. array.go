@@ -24,4 +24,14 @@ func main() {
 
 	fmt.Println(len(names))
 	fmt.Println(len(values))
+
+	// Membuat Array Tanpa Jumlah Elemen
+	var numbers = [...]int{
+		1,
+		2,
+		3,
+		4,
+		5,
+	}
+	fmt.Println(numbers)
 }
